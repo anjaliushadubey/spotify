@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Home, Install, Logo, Search,Menu,Close  } from "../assets/icons"
+import Input from "./input";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,10 +21,7 @@ const Navbar = () => {
               <img src={Home} alt="home" className="w-[2rem] h-[2rem]   " />
             </span>
           </button>
-          <div className="relative flex items-center ml-3 my-3">
-          <input type="text" placeholder="What do you want to play?"  className="w-[474px] h-[47px] bg-secondary2 items-center justify-center pl-14 font-[500px] rounded-full" onChange={()=>{}}/>
-          <img src={Search} alt="search" className="w-[3rem] absolute ml-2" onClick={()=>{}} />
-          </div>
+           <Input/>
           </div>
           <div className=" hidden items-center md:flex justify-between">
             <span className="bg-white text-black rounded-full px-20 py-5 font-bold from-neutral-100 mx-1">
